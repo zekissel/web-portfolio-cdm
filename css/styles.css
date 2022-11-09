@@ -1,0 +1,58 @@
+:root {
+    --bg: #242f40;
+    --navcol: #363636;
+    --navbut: #111;
+    --text: #e5e5e5;
+    --act: #cca43b;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.topnav {
+    background-color: var(--navcol);
+    padding: 16px 20px;
+    font-size: 18px;
+    float: left;
+    width: 97%;
+}
+
+.topnav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 16px 32px;
+}
+
+.topnav a.active {
+    background-color: var(--act);
+    color: var(--navbut);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    text-align: center;
+    color: var(--text);
+    float: left;
+}
+
+.col.side {
+    width: 24%;
+    padding: 45px 5px;
+}
+
+.col.middle {
+    width: 49%;
+}
+
+.ss {
+    width: 55%;
+    padding: 5% 0%;
+    margin: auto;
+    color: var(--text);
+}
