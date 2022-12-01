@@ -9,12 +9,15 @@
 * {
     font-family: sans-serif;   
     font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
 }
 
 body {
     background-color: var(--bg);
 }
 
+/* NAVIGATION BAR */
 .topnav {
     background-color: var(--navcol);
     padding: 16px 20px;
@@ -25,7 +28,6 @@ body {
 
 .topnav a {
     color: var(--text);
-    text-decoration: none;
     padding: 16px 32px;
 }
 
@@ -34,27 +36,20 @@ body {
     color: var(--navbut);
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-.col {
-    text-align: center;
-    color: var(--text);
-    float: left;
-}
-
-.col.side {
-    width: 24%;
-    padding: 45px 5px;
-}
-
-.col.middle {
-    width: 49%;
-    padding: 5px 15px;
+.intro {
     margin: auto;
+    width: 60%;
+    padding: 2%;
+    border: 2pt solid #cca43b;
+}
+
+.intro h1 {
+    font-size: 22px;
+}
+
+.intro a {
+    border-bottom: 1px dotted #fff;
 }
 
 .ss {
