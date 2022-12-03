@@ -1,60 +1,68 @@
 :root {
-    --bg: #242f40;
-    --navcol: #363636;
-    --navbut: #111;
-    --text: #e5e5e5;
-    --act: #cca43b;
+    --bg: #232323;
+    --nb_bg: #3F4045;
+    --nb_active: #1D8AC1;
+    --nb_active_hover: #339DDA;
+    --nb_hover: #3b3b49;
+
+    --courier: 'Courier New', Courier, monospace;
+    --lucida: "Lucida Console", "Courier New", monospace;
 }
 
 * {
-    font-family: sans-serif;   
+    font-family: var(--lucida);
     font-size: 18px;
-    text-decoration: none;
-    color: var(--text);
-}
-
-body {
     background-color: var(--bg);
+    color: white;
+    text-decoration: none;
 }
 
-/* NAVIGATION BAR */
-.topnav {
-    background-color: var(--navcol);
-    padding: 16px 20px;
-    font-size: 18px;
+.navbar {
+    padding: 1% 2%;
+    text-align: center;
+    background-color: var(--nb_bg);
+}
+
+.navbar a {
+    padding: 1% 6%;
+    border-style: inset;
+}
+
+.navbar a:hover {
+    background-color: var(--nb_hover);
+}
+
+.navbar a.active {
+    background-color: var(--nb_active);
+    border-style: outset;
+}
+
+.navbar a.active:hover {
+    background-color: var(--nb_active_hover);
+}
+
+.navbar a.github {
+    float: right;
+    padding: 0;
+    margin: auto 0;
+    border-style: none;
+}
+
+.navbar a.linkedin {
     float: left;
-    width: 98%;
+    padding: 0;
+    margin: 0;
+    border-style: none;
 }
 
-.topnav a {
-    color: var(--text);
-    padding: 16px 32px;
-}
-
-.topnav a.active {
-    background-color: var(--act);
-    color: var(--navbut);
-}
-
-
-.intro {
-    margin: auto;
+.main {
+    margin: 2% auto;
     width: 60%;
-    padding: 2%;
-    border: 2pt solid #cca43b;
+    border-style: outset;
+    padding: 0.5%;
 }
 
-.intro h1 {
-    font-size: 22px;
-}
-
-.intro a {
-    border-bottom: 1px dotted #fff;
-}
-
-.ss {
-    width: 60%;
-    padding: 5% 0%;
-    margin: auto;
-    color: var(--text);
+.main h1 {
+    text-align: center;
+    font-size: larger;
 }
