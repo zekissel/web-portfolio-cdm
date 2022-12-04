@@ -85,3 +85,8 @@
     width: 30%;
     margin: 2%;
 }
+
+.link {
+    text-decoration: underline;
+    color: var(--nb_active);
+}
